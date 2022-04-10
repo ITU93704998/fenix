@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418239087829",
+    "project_id": "fenixauto-66160",
+    "storage_bucket": "fenixauto-66160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418239087829:android:9bd2ed3a1ed6bf11a0ce5c",
+        "android_client_info": {
+          "package_name": "com.fenix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418239087829-9ddehkva0vi2m8qik3365oeb0kci04iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKpwl9BocJ26q5xivZtqguWhFID9qgLOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418239087829-9ddehkva0vi2m8qik3365oeb0kci04iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
