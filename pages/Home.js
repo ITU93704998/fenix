@@ -54,6 +54,30 @@ export default function App({navigation}) {
       .then(() => Alert.alert('Usuario', 'Usuarios deslogado'));
   }
 
+  useEffect(() => {
+    const comissao = async () => {
+      const subscriber = firestore()
+        .collection('aviso_materiais')
+        .onSnapshot(querySnapshot => {
+          const verifica = [];
+
+          querySnapshot.forEach(documentSnapshot => {
+            verifica.push({
+              ...documentSnapshot.data(),
+              key: documentSnapshot.id,
+            });
+          });
+
+          setVerificacao(verifica);
+        });
+
+      // Unsubscribe from events when no longer in use
+      return () => subscriber();
+    };
+
+    comissao();
+  }, []);
+
   if (initializing) return null;
 
   const storeData = async () => {
